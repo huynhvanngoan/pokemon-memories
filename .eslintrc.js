@@ -10,8 +10,11 @@ module.exports = {
   ],
   parserOptions: {
     parser: "@babel/eslint-parser",
+    requireConfigFile: false,
   },
   rules: {
+    "vue/no-reserved-component-names": "off",
+    "vue/multi-word-component-names": "off",
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
   },
